@@ -1,1 +1,1 @@
-# mythcardmgic.com
+# mythcardmagic.com
