@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUICK-E-CARD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header/Navigation */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #5f6368;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #1a73e8;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: white;
+            color: #667eea;
+        }
+
+        .btn-primary:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .feature:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .feature-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .feature-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h2 {
+            font-size: 2rem;
+            color: #202124;
+            margin-bottom: 1rem;
+        }
+
+        .feature-content p {
+            font-size: 1.1rem;
+            color: #5f6368;
+            line-height: 1.8;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+
+        .faq-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 1.5rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .faq-item h3 {
+            font-size: 1.4rem;
+            color: #202124;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item p {
+            font-size: 1.05rem;
+            color: #5f6368;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #202124;
+            color: #9aa0a6;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer a {
+            color: #8ab4f8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .feature {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        /* Placeholder for images */
+        .placeholder-image {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            padding: 3rem;
+            border-radius: 8px;
+            min-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="#" class="logo">QUICK-E-CARD</a>
+            <ul class="nav-links">
+                <li><a href="#home">Mythcardmagic</a></li>
+                <li><a href="#privacy">privacypolicy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>QUICK-E-CARD</h1>
+        <p>The fast modern way to show someone that you care.</p>
+        <p class="tagline">Create a card, write a personal message. Quick-E-Card makes it come to life.</p>
+        <div class="cta-buttons">
+            <a href="https://www.mythcardmagic.com" class="btn btn-primary">Click here to download app</a>
+            <a href="https://www.mythcardmagic.com/privacypolicy" class="btn btn-secondary">Click here to view privacy policy</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="container">
+        <!-- Feature 1 -->
+        <div class="feature">
+            <div class="feature-image">
+                <div class="placeholder-image">
+                    <p>📱 Quick-E-Card App Interface</p>
+                </div>
+            </div>
+            <div class="feature-content">
+                <h2>Quickly Create a Card</h2>
+                <p>With Quick-E-Card's easy system you can create a card in seconds and have it on its way to whomever you choose instantly</p>
+            </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature">
+            <div class="feature-image">
+                <div class="placeholder-image">
+                    <p>✍️ Personal Message Editor</p>
+                </div>
+            </div>
+            <div class="feature-content">
+                <h2>Add your personal message</h2>
+                <p>Adding a personal message to the inside of the card stops this from being just another gif or instant messenger message. It becomes personal.</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature">
+            <div class="feature-image">
+                <div class="placeholder-image">
+                    <p>🎬 Animated Video Creation</p>
+                </div>
+            </div>
+            <div class="feature-content">
+                <h2>Bring it to life</h2>
+                <p>Quick-E-Card creates a video from your creation, adds an animation and allows you to send it directly. NO LINKS OR EXTERNAL SYSTEMS</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-item">
+                <h3>How much will it cost me to create a Quick-E-Card?</h3>
+                <p>NOTHING! There is no cost, no subscription and your video is ready in seconds.</p>
+                <p style="margin-top: 1rem;">The app does contain adverts, but they run while the video is being created, so you would be waiting anyway.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can anyone receive my Quick-E-Card?</h3>
+                <p>Yes, Quick-E-Card creates a video that can be shared anywhere. The recipient does not need to have the app, just the ability to receive and watch your creation. The Quick-E-Card can be shared via any social media and communication platform.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Are there any Limitations?</h3>
+                <p>Unfortunately due to the power required to create and render a video from your images and personal message, it is recommended that your phone or device has at least 6gb of RAM. It has been known that 4gb RAM devices can run the app, but not always.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="https://drive.google.com/file/d/1r_BogjZ5Fg38732_TyJgvIk2eLqO4H7-/view?usp=sharing">app-ads.txt</a></p>
+        <p style="margin-top: 1rem;">© 2024 Quick-E-Card. All rights reserved.</p>
+    </footer>
+</body>
+</html>
