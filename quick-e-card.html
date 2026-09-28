@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-E-Card - Mythcardmagic</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #5f6368;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #1a73e8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.95; }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .btn-primary { background: white; color: #667eea; }
+        .btn-primary:hover { background: #f8f9fa; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        .feature:nth-child(even) { flex-direction: row-reverse; }
+        .feature-text h2 { color: #202124; font-size: 1.6rem; margin-bottom: 1rem; }
+        .feature-text p { color: #5f6368; font-size: 1.05rem; line-height: 1.8; }
+        .faq-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .faq-item h3 { color: #202124; margin-bottom: 0.8rem; }
+        .faq-item p { color: #5f6368; line-height: 1.7; }
+        footer {
+            background-color: #202124;
+            color: #9aa0a6;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        footer a { color: #8ab4f8; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .feature { flex-direction: column !important; text-align: center; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mythcardmagic</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quick-e-card.html" class="active">Quick-E-Card</a></li>
+                <li><a href="wriggle-on.html">Wriggle On</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Quick-E-Card</h1>
+        <p>The fast modern way to show someone that you care</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Download App</a>
+            <a href="quick-e-card-privacy.html" class="btn btn-secondary">Privacy Policy</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="feature">
+            <div class="feature-text">
+                <h2>Quickly Create a Card</h2>
+                <p>Create a card in seconds and have it on its way to whomever you choose instantly.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-text">
+                <h2>Add Your Personal Message</h2>
+                <p>Add a personal message — it becomes something meaningful, not just another message.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <div class="feature-text">
+                <h2>Bring It to Life</h2>
+                <p>Your creation becomes a video — ready to send directly. No links, no external systems.</p>
+            </div>
+        </div>
+
+        <h2 style="margin: 3rem 0 1.5rem; color: #202124;">FAQ</h2>
+        <div class="faq-item">
+            <h3>How much does it cost?</h3>
+            <p>NOTHING! No cost, no subscription. The app includes ads while your video is being created.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can anyone receive it?</h3>
+            <p>Yes — sent as a video. Recipients don't need the app. Share anywhere.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Device requirements?</h3>
+            <p>Recommended: 6GB RAM. May work on 4GB devices but not guaranteed.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Quick-E-Card | <a href="quick-e-card-privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
