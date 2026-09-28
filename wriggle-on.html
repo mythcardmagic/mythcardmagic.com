@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wriggle On - Mythcardmagic</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #5f6368;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #1a73e8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.3rem; max-width: 700px; margin: 0 auto 2rem; opacity: 0.95; }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .btn-primary { background: white; color: #667eea; }
+        .btn-primary:hover { background: #f8f9fa; transform: translateY(-2px); }
+        .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+        .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        .content-block {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .content-block h2 { color: #202124; margin-bottom: 1rem; }
+        .content-block p { color: #5f6368; margin-bottom: 1rem; line-height: 1.8; }
+        .content-block ul { margin: 0 0 1rem 1.5rem; }
+        .content-block li { color: #5f6368; margin-bottom: 0.5rem; line-height: 1.8; }
+        footer {
+            background-color: #202124;
+            color: #9aa0a6;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        footer a { color: #8ab4f8; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .nav-links { gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mythcardmagic</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quick-e-card.html">Quick-E-Card</a></li>
+                <li><a href="wriggle-on.html" class="active">Wriggle On</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Wriggle On</h1>
+        <p>Fun, simple activities to keep little ones engaged</p>
+        <div class="cta-buttons">
+            <a href="#" class="btn btn-primary">Download on Google Play</a>
+            <a href="wriggle-on-privacy.html" class="btn btn-secondary">Privacy Policy</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="content-block">
+            <h2>About Wriggle On</h2>
+            <p>A lighthearted, interactive app designed to keep young minds busy with colourful, simple games and activities — perfect on the go.</p>
+        </div>
+
+        <div class="content-block">
+            <h2>Features</h2>
+            <ul>
+                <li>Child-friendly interface — easy to use alone</li>
+                <li>Bright, colourful visuals and animations</li>
+                <li>No adverts during play</li>
+                <li>No in-app purchases — completely free</li>
+                <li>Works offline — no internet needed</li>
+            </ul>
+        </div>
+
+        <div class="content-block">
+            <h2>For Parents</h2>
+            <p>Your child's privacy matters. Wriggle On does not collect personal information, does not track location, and does not share data with third parties beyond app delivery services.</p>
+            <p><a href="wriggle-on-privacy.html" style="color:#1a73e8;">Read our Privacy Policy →</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Wriggle On | <a href="wriggle-on-privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
