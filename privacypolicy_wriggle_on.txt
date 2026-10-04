@@ -1,0 +1,63 @@
+This privacy policy applies to the Wriggle On application created by Matthew Smith.
+This service is provided "AS IS" without warranties of any kind.
+
+---
+
+1. INFORMATION COLLECTION AND USE
+The Application may collect the following information:
+- Your device’s IP address
+- Pages visited within the app, including date, time, and duration of visits
+- Operating system type and device details
+
+We do NOT collect precise or real‑time location data from your device.
+
+---
+
+2. THIRD‑PARTY SERVICES
+Our app uses the following third‑party services:
+
+• Google Play Services
+  Privacy Policy: https://www.google.com/policies/privacy/
+
+• Google AdMob
+  We use Google AdMob to display advertisements within the app. AdMob may collect
+  and use information about your activity to provide relevant advertising. For
+  more details, please review Google’s Privacy Policy linked above.
+
+  AD REMOVAL OPTION
+  You may make a payment as offered within the app to disable all advertisements
+  in Wriggle On. Once confirmed and active, ads served by AdMob will no longer be
+  displayed. Payment processing is handled through Google Play; please refer to
+  Google’s privacy notices for payment data information.
+
+---
+
+3. DATA SHARING
+Only aggregated, anonymised statistical data — from which individual users
+cannot be identified — may be shared to improve the service.
+
+Information may be disclosed:
+- When required by applicable law or legal process
+- To protect the rights, property, or safety of us, our users, or the public
+
+---
+
+4. YOUR RIGHTS
+• Stop collection: Uninstall the Wriggle On app from your device to cease all
+  data collection immediately.
+• Request deletion: Contact us at the email below to request deletion of any
+  personal information we hold about you.
+
+---
+
+5. CHILDREN
+The app may be used by children. We do not knowingly collect personal data
+from children under 13 years of age. If you believe we have collected such
+data without appropriate consent, contact us immediately and we will take
+steps to remove it.
+
+---
+
+6. CONTACT
+Matthew Smith
+Email: mythcardmagic@gmail.com
